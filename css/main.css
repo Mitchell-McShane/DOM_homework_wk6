@@ -1,0 +1,95 @@
+body {
+    font-family: fantasy;
+    text-align: center;
+    background-color: rgb(216, 148, 148);
+    background-size: cover;
+}
+
+form {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+#form-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.form-item {
+    margin-right: 1.5rem;
+}
+
+label.primary {
+    display: block;
+    margin: 0.3em 0;
+}
+
+label:after {
+    content: ":";
+}
+
+button, input[type="submit"] {
+    margin-top: 1rem;
+}
+
+#christmas-list {
+    display:flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+
+.christmas-list-item {
+    margin: 0.6rem 0.6rem;
+    padding: 0.6rem 0.6rem;
+    border-style: dotted;
+    border-radius: 3%;
+    background: rgb(170, 196, 170);
+}
+
+h1 {
+    text-align: center;
+}
+
+/* buttons */
+
+.styled {
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    background-color: rgb(69, 7, 7);
+}
+
+.styled:hover {
+    background-color: red;
+}
+
+.styled:active {
+    box-shadow: seagreen;
+}
+
+#delete-all {
+    height: 34px;
+    margin: 0 auto;
+    margin-right: 10px;
+    float: left;
+    border: 0;
+    padding: 0 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: rgb(69, 7, 7);
+}
+
+#delete-all:hover {
+    background-color: red;
+}
+
+#delete-all:active {
+    box-shadow: seagreen;
+}
