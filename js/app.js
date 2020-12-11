@@ -3,6 +3,10 @@ document.addEventListener('DOMContentLoaded', () => {
     //Grab the form
     const newItemForm = document.querySelector('#new-item-form');
     newItemForm.addEventListener('submit', handleNewItemFormSubmit);
+
+    //delete all button
+    const deleteAllButton = document.querySelector('#delete-all');
+    deleteAllButton.addEventListener('click', handleDeleteAllClick);
 })
 
 // Functions
@@ -41,5 +45,12 @@ const createChristmasListItem = function (form) {
 
 
     return christmasListItem;
+}
+
+// Function for delete-all
+const handleDeleteAllClick = function (event) {
+    const christmasList = document.querySelector('#christmas-list');
+    christmasList.innerHTML = '';
+    console.log('all is gone!');
 }
 
